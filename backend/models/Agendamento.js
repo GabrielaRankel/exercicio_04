@@ -32,10 +32,6 @@ const Agendamento = db.define('agendamento', {
         allowNull: false
     },
     tipo: {
-        type: DataTypes.STRING(50),
-        allowNull: false
-    },
-    serviço: {
         type: DataTypes.ENUM('revisão', 'manutenção', 'instalação'),
         allowNull: false
     }

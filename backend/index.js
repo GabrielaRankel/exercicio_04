@@ -16,13 +16,12 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(cors())
 
-app.post('/cliete', clienteController.cadastrar)
+app.post('/cliente', clienteController.cadastrar)
 app.post('/login', authController.login)
 
 app.get('/', (req,res)=>{
     res.status(200).json({message: 'Aplicação rodando!!'})
 })
-
 
 // Middleware de Autenticação para proteger as rotas abaixo
 app.use(authMiddleware)
@@ -35,6 +34,7 @@ app.put('/cliente/:id', clienteController.atualizar)
 app.delete('/cliente/:id', clienteController.excluir)
 
 // Rotas privadas do Cliente (CRUD Completo)
+app.post('/veiculo', veiculoController.cadastrar)
 app.get('/veiculos', veiculoController.listar)
 app.get('/veiculo/buscarNome/:nome', veiculoController.consultarPorNome)
 app.get('/veiculo/:id', veiculoController.consultarPorId)

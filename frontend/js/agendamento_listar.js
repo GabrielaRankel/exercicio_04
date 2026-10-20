@@ -53,7 +53,6 @@ function criarTbody(dados) {
         corpo += `<td>${el.data}</td>`
         corpo += `<td>${el.hora}</td>`
         corpo += `<td>${el.tipo}</td>`
-        corpo += `<td>${el.servico}</td>`
         corpo += `<td>${nomeCliente}</td>`
         corpo += `<td>${modeloVeiculo}</td>`
         corpo += `</tr>`
@@ -70,7 +69,6 @@ function criarThead() {
                 <th>Data</th>
                 <th>Hora</th>
                 <th>Tipo</th>
-                <th>Serviço</th>
                 <th>Cliente</th>
                 <th>Veículo</th>
             </tr>

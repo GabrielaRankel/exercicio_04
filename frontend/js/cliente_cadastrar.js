@@ -18,6 +18,7 @@ btn_cadastrar.addEventListener('click', (e) => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(valores)
     })
+    
     .then(res => res.json())
     .then(dados => {
         resposta.innerHTML = `<p>${dados.message}</p>`

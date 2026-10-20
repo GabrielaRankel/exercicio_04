@@ -30,14 +30,15 @@
 
             <label for="idCliente">Código do Cliente</label><br>
             <input type="number" id="idCliente" required><br><br>
-            
-            <label for="tipo">tipo</label><br>
-            <input type="number" id="tipo" required><br><br>
-            
-            <label for="servico">servico</label><br>
-            <input type="number" id="servico" required><br><br>
 
+            <select name="tipo" id="tipo" required>
+                <option value="">Selecione o tipo</option>
+                <option value="revisao">revisão</option>
+                <option value="manutencao">manutenção</option>
+                <option value="instalacao">instalação</option>
+            </select><br><br>
 
+        
             <button id="btn_atualizar">Atualizar</button>
         </form>
         <div id="resposta" class="resposta"></div>

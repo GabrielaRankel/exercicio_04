@@ -16,8 +16,7 @@ btn_atualizar.addEventListener('click', (e) => {
     const valores = {
         data: document.getElementById('data').value,
         hora: document.getElementById('hora').value,
-        tipo: Number(document.getElementById('tipo').value),
-        servico: Number(document.getElementById('servico').value),
+        tipo: (document.getElementById('tipo').value),
         idVeiculo: Number(document.getElementById('idVeiculo').value),
         idCliente: Number(document.getElementById('idCliente').value)
     }
